@@ -42,3 +42,12 @@
 .wrap-reverse {
   flex-wrap: wrap-reverse;
 }
+
+/* The flex-flow property allows you to combine flex-direction and flex-wrap into one property. It's pretty self explanatory, no reason to go through every combination. */
+.row-wrap {
+  flex-flow: row wrap;
+}
+
+.row-reverse-wrap {
+  flex-flow: row-reverse wrap;
+}
