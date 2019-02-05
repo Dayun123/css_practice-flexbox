@@ -6,6 +6,7 @@
 </head>
 <body>
   <h1>Flexbox Practice</h1>
+
   <p>A Container with 4 items</p>
   <div class="container">
     <div class="item">1</div>
@@ -14,6 +15,9 @@
     <div class="item">4</div>
   </div>
 
+  <h2>The different flex-directions.</h2>
+
+  <h3>Flex-Direction: Row</h3>
   <p>A Flex-Container with 4 items. The flex-direction is row, the default, which means they are laid out left-to-right.</p>
   <div class="flex-container container">
     <div class="flex-item item">1</div>
@@ -22,6 +26,7 @@
     <div class="flex-item item">4</div>
   </div>
 
+  <h3>Flex-Direction: Row-Reverse</h3>
   <p>A Flex-Container with 4 items. The flex-direction is row-reverse, which means they are laid out right to left, with the first flex-item starting on the right side of the page and then laying out the rest in order.</p>
   <div class="flex-container container row-reverse">
     <div class="flex-item item">1</div>
@@ -30,6 +35,7 @@
     <div class="flex-item item">4</div>
   </div>
 
+  <h3>Flex-Direction: Column</h3>
   <p>A Flex-Container with 4 items. The flex-direction is column, so the flex-items are laid out top to bottom. Notice how, in the column flex-direction, the flex-items take up the entire width of the container.</p>
   <div class="flex-container container column">
     <div class="flex-item item">1</div>
@@ -38,12 +44,93 @@
     <div class="flex-item item">4</div>
   </div>
 
+  <h3>Flex-Direction: Column-Reverse</h3>
   <p>A Flex-Container with 4 items. The flex-direction is column-reverse, which means the first item will be on the bottom of the container and the last will be on the top. Notice how in the column flex-direction, the elements take up the entire width of the container.</p>
   <div class="flex-container container column-reverse">
     <div class="flex-item item">1</div>
     <div class="flex-item item">2</div>
     <div class="flex-item item">3</div>
     <div class="flex-item item">4</div>
+  </div>
+
+  <h2>Flex Wrap</h2>
+
+  <h3>Flex-Wrap: no-wrap</h3>
+  <p>A Flex-Container with 8 items. The flex-direction is row, which is the default. And the flex-wrap is set to no-wrap, which is the default. Notice how the flex-items do not wrap at the end of the viewport, rather, a scroll bar is added and the go off the right side of the page. Notice that the flex-items that are outside of the visible area of the page are also outside of the containing flex-container.</p>
+  <div class="flex-container container">
+    <div class="flex-item item">1</div>
+    <div class="flex-item item">2</div>
+    <div class="flex-item item">3</div>
+    <div class="flex-item item">4</div>
+    <div class="flex-item item">5</div>
+    <div class="flex-item item">6</div>
+    <div class="flex-item item">7</div>
+    <div class="flex-item item">8</div>
+  </div>
+
+  <h3>Flex-Wrap: no-wrap, Flex-Direction: row-reverse</h3>
+  <p>A Flex-Container with 8 items. The flex-direction is row-reverse, and the flex-wrap is set to no-wrap, which is the default. There should be 8 flex-items, but you will notice that the items that are outside of the viewport are pushed off the left side of the page, essentially making them invisible to the user.</p>
+  <div class="flex-container container row-reverse">
+    <div class="flex-item item">1</div>
+    <div class="flex-item item">2</div>
+    <div class="flex-item item">3</div>
+    <div class="flex-item item">4</div>
+    <div class="flex-item item">5</div>
+    <div class="flex-item item">6</div>
+    <div class="flex-item item">7</div>
+    <div class="flex-item item">8</div>
+  </div>
+
+  <h3>Flex-Wrap: wrap, Flex-Direction: row-reverse</h3>
+  <p>A Flex-Container with 8 items. The flex-direction is row-reverse, and the flex-wrap is set to wrap. If there are too many flex items to fit in the viewport on one line, they begin wrapping from the left-hand side (since the flex-direction is row-reverse) and start the next line below the current line on the right hand side.</p>
+  <div class="flex-container container wrap row-reverse">
+    <div class="flex-item item">1</div>
+    <div class="flex-item item">2</div>
+    <div class="flex-item item">3</div>
+    <div class="flex-item item">4</div>
+    <div class="flex-item item">5</div>
+    <div class="flex-item item">6</div>
+    <div class="flex-item item">7</div>
+    <div class="flex-item item">8</div>
+  </div>
+
+  <h3>Flex-Wrap: wrap</h3>
+  <p>A Flex-Container with 8 items. The flex-direction is row, which is the default. And the flex-wrap is set to wrap, so the items will wrap when they reach the right-hand side of the page.</p>
+  <div class="flex-container container wrap">
+    <div class="flex-item item">1</div>
+    <div class="flex-item item">2</div>
+    <div class="flex-item item">3</div>
+    <div class="flex-item item">4</div>
+    <div class="flex-item item">5</div>
+    <div class="flex-item item">6</div>
+    <div class="flex-item item">7</div>
+    <div class="flex-item item">8</div>
+  </div>
+
+  <h3>Flex-Wrap: wrap-reverse</h3>
+  <p>A Flex-Container with 8 items. The flex-direction is row, which is the default, and the flex-wrap is set to wrap-reverse. Notice how the last element jumps up above the other elements if the page is made smaller. The wrap happens from the end of the line and adds the last item above the original items.</p>
+  <div class="flex-container container wrap-reverse">
+    <div class="flex-item item">1</div>
+    <div class="flex-item item">2</div>
+    <div class="flex-item item">3</div>
+    <div class="flex-item item">4</div>
+    <div class="flex-item item">5</div>
+    <div class="flex-item item">6</div>
+    <div class="flex-item item">7</div>
+    <div class="flex-item item">8</div>
+  </div>
+
+  <h3>Flex-Wrap: wrap-reverse, flex-direction: row-reverse</h3>
+  <p>A Flex-Container with 8 items. The flex-direction is row-reverse, so the items are laid out starting with the first item on the right hand side. The flex-wrap is set to wrap-reverse, which means the wrap will begin if the last element doesn't have enough room on the page, and it will throw this element ABOVE the others, starting on the right side since we are in row-reverse</p>
+  <div class="flex-container container wrap-reverse row-reverse">
+    <div class="flex-item item">1</div>
+    <div class="flex-item item">2</div>
+    <div class="flex-item item">3</div>
+    <div class="flex-item item">4</div>
+    <div class="flex-item item">5</div>
+    <div class="flex-item item">6</div>
+    <div class="flex-item item">7</div>
+    <div class="flex-item item">8</div>
   </div>
 
 </body>

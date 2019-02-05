@@ -11,6 +11,8 @@
   background-color: #AAF;
 }
 
+/*************** Properties for the parent flex-container *******************/
+
 /* Just by making the container a flex container, now the items inside become flex items. */
 .flex-container {
   display: flex;
@@ -29,4 +31,14 @@
 /* If you make the flex-direction column-reverse, then the first item ends up on the bottom of the container and the last on the top. */
 .column-reverse {
   flex-direction: column-reverse;
+}
+
+/* If there are too many flex-items to fit on a single vertical line, they will begin wrapping underneath that line. Depending on the flex-direction, they will either wrap from the right hand side (flex-direction: row (default)) or wrap from the left hand side (flex-direction: row-reverse) */
+.wrap {
+  flex-wrap: wrap;
+}
+
+/* If there are too many flex items to fit vertically on the page, they will begin wrapping ABOVE the current line. Depending on the flex-direction, they may wrap above and to the left (flex-direction: row) or above and to the right (flex-direction: row-reverse)*/
+.wrap-reverse {
+  flex-wrap: wrap-reverse;
 }
