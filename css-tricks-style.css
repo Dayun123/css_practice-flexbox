@@ -51,3 +51,47 @@
 .row-reverse-wrap {
   flex-flow: row-reverse wrap;
 }
+
+/* > means to select all .item's where the parent has the class .justify-content. */
+.justify-content > .item {
+  margin: 0;
+}
+
+/* Remove the padding from the flex-container for the justify-content examples so we can see how justify-content adds space around elements. */
+.justify-content {
+  padding: 0;
+}
+
+/* Aligns the items one after the other starting from the left-hand side of the flex-container. No space is put between them. */
+.flex-start {
+  justify-content: flex-start;
+}
+
+/* Aligns the items one after the other starting from the right-hand side of the flex-container, no space is put between them. */
+.flex-end {
+  justify-content: flex-end;
+}
+
+/* Aligns the items in the center of the flex-container, but doesn't add any space around the individual items. */
+.center {
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+
+
+
+
+
+

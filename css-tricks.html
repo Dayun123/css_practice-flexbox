@@ -177,5 +177,74 @@
 
   <p>(I think you get the point, Flex-Flow is shorthand for all the examples above, I'm not going to write them all out).</p>
 
+  <h2>Justify Content</h2>
+
+  <h3>justify-content: flex-start</h3>
+  <p>A Flex-Container with 8 items. The margin has been removed from the flex-items to show how the justify-content property works and the padding has been removed from the parent flex-container to show how space is distributed around the flex-items. Here, the default of flex-start is used.</p>
+  <div class="flex-container container justify-content flex-start">
+    <div class="flex-item item">1</div>
+    <div class="flex-item item">2</div>
+    <div class="flex-item item">3</div>
+    <div class="flex-item item">4</div>
+    <div class="flex-item item">5</div>
+    <div class="flex-item item">6</div>
+    <div class="flex-item item">7</div>
+    <div class="flex-item item">8</div>
+  </div>
+
+  <h3>justify-content: flex-end</h3>
+  <p>A Flex-Container with 8 items. The margin has been removed from the flex-items to show how the justify-content property works and the padding has been removed from the parent flex-container to show how space is distributed around the flex-items. Here, the items are aligned to the end (right) of the flex-container since we have used the justify-content: flex-end declaration</p>
+  <div class="flex-container container justify-content flex-end">
+    <div class="flex-item item">1</div>
+    <div class="flex-item item">2</div>
+    <div class="flex-item item">3</div>
+    <div class="flex-item item">4</div>
+    <div class="flex-item item">5</div>
+    <div class="flex-item item">6</div>
+    <div class="flex-item item">7</div>
+    <div class="flex-item item">8</div>
+  </div>
+
+  <h3>justify-content: center</h3>
+  <p>A Flex-Container with 8 items. The margin has been removed from the flex-items to show how the justify-content property works and the padding has been removed from the parent flex-container to show how space is distributed around the flex-items. Here, the justify-content: center declaration is used, which means the items will be centered in the flex-container but have no space between or around the individual flex-items.</p>
+  <div class="flex-container container justify-content center">
+    <div class="flex-item item">1</div>
+    <div class="flex-item item">2</div>
+    <div class="flex-item item">3</div>
+    <div class="flex-item item">4</div>
+    <div class="flex-item item">5</div>
+    <div class="flex-item item">6</div>
+    <div class="flex-item item">7</div>
+    <div class="flex-item item">8</div>
+  </div>
+
+  <h3>justify-content: space-between</h3>
+  <p>A Flex-Container with 4 items. The margin has been removed from the flex-items to show how the justify-content property works and the padding has been removed from the parent flex-container to show how space is distributed around the flex-items. When using the space-between property, the items have space distributed between them, but not around them. Notice how the first element is right up on the left-hand side of the container and the last element is right on the right-hand side of the container.</p>
+  <div class="flex-container container justify-content space-between">
+    <div class="flex-item item">1</div>
+    <div class="flex-item item">2</div>
+    <div class="flex-item item">3</div>
+    <div class="flex-item item">4</div>
+  </div>
+
+  <h3>justify-content: space-around</h3>
+  <p>A Flex-Container with 4 items. The margin has been removed from the flex-items to show how the justify-content property works and the padding has been removed from the parent flex-container to show how space is distributed around the flex-items. When using the space-around property, space is distributed evenly around the flex-items, with equal space being added to the right and left side of each item. This means that the items on the edge of the page will have half of the space as the space between the items in the interior of the page.</p>
+  <div class="flex-container container justify-content space-around">
+    <div class="flex-item item">1</div>
+    <div class="flex-item item">2</div>
+    <div class="flex-item item">3</div>
+    <div class="flex-item item">4</div>
+  </div>
+
+  <h3>justify-content: space-evenly</h3>
+  <p>A Flex-Container with 4 items. The margin has been removed from the flex-items to show how the justify-content property works and the padding has been removed from the parent flex-container to show how space is distributed around the flex-items. When using the space-evenly property, we notice that the space around all items is equal, including the items on the left and right edge of the container.</p>
+  <div class="flex-container container justify-content space-evenly">
+    <div class="flex-item item">1</div>
+    <div class="flex-item item">2</div>
+    <div class="flex-item item">3</div>
+    <div class="flex-item item">4</div>
+  </div>
+
+
 </body>
 </html>
