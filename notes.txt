@@ -1,0 +1,5 @@
+********** CSS TRICKS ***********
+
+Resource: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+The flexbox layout was designed to help lay out, align, and distribute space around elements, even if there size is unkown or dynamic. The main idea behind the flex layout was to give a flex container the ability to alter the width/height (or order) of items in order to fill the available space as the screen size or orientation changes. The flexbox layout is direction agnostic, and this aids in creating layouts that work on different screen orientations and layouts. The flexbox layout is most appropriate for the components of a web page, and maybe small sections of the layout. The overall layout of the page should be handled by the Grid layout.
