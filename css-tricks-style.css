@@ -1,0 +1,32 @@
+.container {
+  padding: 20px;
+  border: 1px dashed black;
+  background-color: #FAA;
+}
+
+.item {
+  border: 1px solid black;
+  padding: 40px;
+  margin: 20px;
+  background-color: #AAF;
+}
+
+/* Just by making the container a flex container, now the items inside become flex items. */
+.flex-container {
+  display: flex;
+}
+
+/* Making the flex-direction row-reverse on the flex-container lays the elements out right-to-left, which means the first element will appear on the right side of the container. */
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+/* If you want elements laid out top-to-bottom, the column flex-direction accomplishes this. */
+.column {
+  flex-direction: column;
+}
+
+/* If you make the flex-direction column-reverse, then the first item ends up on the bottom of the container and the last on the top. */
+.column-reverse {
+  flex-direction: column-reverse;
+}

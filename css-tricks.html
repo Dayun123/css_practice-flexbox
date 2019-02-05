@@ -5,6 +5,46 @@
   <link rel="stylesheet" type="text/css" href="css-tricks-style.css">
 </head>
 <body>
+  <h1>Flexbox Practice</h1>
+  <p>A Container with 4 items</p>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+  </div>
+
+  <p>A Flex-Container with 4 items. The flex-direction is row, the default, which means they are laid out left-to-right.</p>
+  <div class="flex-container container">
+    <div class="flex-item item">1</div>
+    <div class="flex-item item">2</div>
+    <div class="flex-item item">3</div>
+    <div class="flex-item item">4</div>
+  </div>
+
+  <p>A Flex-Container with 4 items. The flex-direction is row-reverse, which means they are laid out right to left, with the first flex-item starting on the right side of the page and then laying out the rest in order.</p>
+  <div class="flex-container container row-reverse">
+    <div class="flex-item item">1</div>
+    <div class="flex-item item">2</div>
+    <div class="flex-item item">3</div>
+    <div class="flex-item item">4</div>
+  </div>
+
+  <p>A Flex-Container with 4 items. The flex-direction is column, so the flex-items are laid out top to bottom. Notice how, in the column flex-direction, the flex-items take up the entire width of the container.</p>
+  <div class="flex-container container column">
+    <div class="flex-item item">1</div>
+    <div class="flex-item item">2</div>
+    <div class="flex-item item">3</div>
+    <div class="flex-item item">4</div>
+  </div>
+
+  <p>A Flex-Container with 4 items. The flex-direction is column-reverse, which means the first item will be on the bottom of the container and the last will be on the top. Notice how in the column flex-direction, the elements take up the entire width of the container.</p>
+  <div class="flex-container container column-reverse">
+    <div class="flex-item item">1</div>
+    <div class="flex-item item">2</div>
+    <div class="flex-item item">3</div>
+    <div class="flex-item item">4</div>
+  </div>
 
 </body>
 </html>
