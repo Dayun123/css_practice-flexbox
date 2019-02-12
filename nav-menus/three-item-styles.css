@@ -1,0 +1,8 @@
+/* Border-box for all elements unless I specify otherwise. */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
