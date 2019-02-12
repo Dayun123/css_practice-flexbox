@@ -6,3 +6,58 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+body {
+  background: rgb(240, 256, 256);
+}
+
+.container {
+  border: 1px solid black;
+  max-width: 1000px;
+  padding: 50px;
+  /* Centers the container */
+  margin: 0 auto;
+}
+
+/********** Navigation *****************/
+
+nav {
+  border: 1px dashed black;
+}
+
+/* The Flex Container */
+nav ul {
+  display: flex;
+}
+
+/* The Flex Items */
+nav li {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  flex: 1;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+/***************** Responsive Resets *****************/
+
+@media all and (max-width: 550px) {
+
+  nav {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+  }
+
+  nav li {
+    flex: 1 1 100%;
+  }
+
+}
