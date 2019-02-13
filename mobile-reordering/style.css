@@ -13,31 +13,44 @@ body {
 
 /* Borders for layout purposes only */
 .site-wrapper { border: 3px solid black; }
-header { border: 3px dashed blue; }
-nav { border: 3px dashed yellow; }
-.hero { border: 3px dashed green; }
+/*header { border: 3px dashed blue; }*/
+/*nav { border: 3px dashed yellow; }*/
+/*.hero { border: 3px dashed green; }*/
 .site-description { border: 3px dashed red; }
 .signup-form { border: 3px dashed purple; }
 footer { border: 3px dashed pink; }
 
 .site-wrapper {
-  max-width: 9  00px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
 header {
-  padding: 20px;
-  font-size: 2rem;
+  padding: 40px;
+  font-size: 2.5rem;
   text-align: center;
+  color: #fff;
+  background: rgba(19, 27, 174, 0.7);
 }
 
 nav ul {
   display: flex;
+  justify-content: center;
 }
 
 nav li {
-  background: rgba(40, 0, 0, 0.3);
+  background: rgba(250, 225, 0, 1);
   padding: 20px;
+  flex: 3;
+}
+
+nav li.social-nav {
+  flex: 1;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #000;
 }
 
 .hero img {
