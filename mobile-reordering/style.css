@@ -58,6 +58,7 @@ nav li {
   background: rgba(250, 225, 0, 1);
   padding: 20px;
   flex: 3;
+  border: 1px solid #8795a1;
 }
 
 nav li.social-nav {
@@ -123,4 +124,49 @@ footer {
   background: rgba(19, 27, 174, 0.7);
   color: #fff;
   padding: 20px;
+}
+
+/* Responsive breakpoint. */
+@media all and (max-width: 800px) {
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav li {
+    flex: 1 1 50%;
+  }
+
+  nav li.social-nav {
+    flex: 1 1 33.33333%;
+  }
+
+}
+
+@media all and (max-width: 650px) {
+
+  .signup-form form {
+    flex-wrap: wrap;
+  }
+
+  form input {
+    flex: 1 1 40%;
+    margin: 5px;
+    max-width: 175px;
+  }
+
+  form input[type="submit"] {
+    flex-basis: 50%;
+  }
+
+}
+
+@media all and (max-width: 550px) {
+
+  form input {
+    max-width: 150px;
+  }
+
 }
