@@ -14,7 +14,8 @@
     </header>
 
     <nav>
-      <ul>
+      <a href="#" id="toggleNav"><i class="fas fa-bars"></i></a>
+      <ul id="mainNav">
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">News</a></li>
@@ -48,6 +49,15 @@
 
 
   </div>
+
+  <script type="text/javascript">
+    var toggleNav = document.getElementById('toggleNav');
+    var mainNav = document.getElementById('mainNav');
+    toggleNav.addEventListener('click', function(){
+      mainNav.classList.toggle('open');
+    });
+
+  </script>
 
 </body>
 </html>

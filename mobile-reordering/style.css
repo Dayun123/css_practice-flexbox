@@ -36,6 +36,10 @@ body {
 /*.signup-form { border: 3px dashed purple; }*/
 /*footer { border: 3px dashed pink; }*/
 
+#toggleNav {
+  display: none;
+}
+
 .site-wrapper {
   max-width: 900px;
   margin: 0 auto;
@@ -167,6 +171,47 @@ footer {
 
   form input {
     max-width: 150px;
+  }
+
+  nav li {
+    flex-basis: 100%;
+  }
+
+  .site-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Set the order of all of the main section flex-items to a high number so we can order them starting at 1 individually. */
+  .site-wrapper > * {
+    order: 100;
+  }
+
+  .site-wrapper nav {
+    order: 1;
+  }
+
+  .site-wrapper header {
+    order: 2;
+  }
+
+  .site-description {
+    order: 3;
+  }
+
+  #toggleNav {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 10px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .open {
+    display: flex;
   }
 
 }
