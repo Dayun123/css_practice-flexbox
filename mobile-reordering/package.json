@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/Dayun123/css_practice-flexbox#readme",
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.7.2",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-concat": "^2.6.1",
