@@ -11,14 +11,21 @@ body {
   font-size: 16px;
 }
 
+/* Borders for layout purposes only */
+.site-wrapper { border: 3px solid black; }
+header { border: 3px dashed blue; }
+nav { border: 3px dashed yellow; }
+.hero { border: 3px dashed green; }
+.site-description { border: 3px dashed red; }
+.signup-form { border: 3px dashed purple; }
+footer { border: 3px dashed pink; }
+
 .site-wrapper {
-  border: 1px solid black;
-  max-width: 1000px;
+  max-width: 9  00px;
   margin: 0 auto;
 }
 
 header {
-  border: 1px dashed blue;
   padding: 20px;
   font-size: 2rem;
   text-align: center;
@@ -31,4 +38,26 @@ nav ul {
 nav li {
   background: rgba(40, 0, 0, 0.3);
   padding: 20px;
+}
+
+.hero img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.site-description {
+  padding: 20px;
+}
+
+.signup-form form {
+  display: flex;
+  justify-content: center;
+}
+
+.signup-form h2 {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
 }
